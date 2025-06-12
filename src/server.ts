@@ -1,9 +1,9 @@
+import 'dotenv/config';
 import express, { Application } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import compression from 'compression';
 import cookieParser from 'cookie-parser';
-import 'dotenv/config';
 import morgan from 'morgan';
 import databaseConfig from './config/databaseConfig/mongoDBConfig';
 import { rateLimit } from 'express-rate-limit'
@@ -27,7 +27,7 @@ const limiter = rateLimit({
 app.use(limiter);
 const APP_NAME: string = process.env.APP_NAME || 'codingLamb';
 const APP_HOST: string  = process.env.APP_HOST || 'localhost';
-const APP_PORT: string | number = parseInt(process.env.APP_PORT || '80000', 10);
+const APP_PORT: string | number = parseInt(process.env.APP_PORT  || '8000', 10);
 const API_VERSION: string | number = process.env.APP_VERSION  || 'v1';
 if (process.env.NODE_ENV as string === 'development') {
     app.use(morgan('dev'))
