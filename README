@@ -1,0 +1,30 @@
+MongoPortfolioAPI
+Welcome to MongoPortfolioAPI, a powerful web application built using the MERN stack (MongoDB, Express.js, React, Node.js) and TypeScript. This project empowers users to create and manage their online portfolios effortlessly.
+
+About the Project
+Developed by Asoh Yannick, a dedicated Full-stack TypeScript Engineer, MongoPortfolioAPI offers a seamless experience for users to:
+
+Create their online portfolios
+Fetch all available portfolios
+Retrieve a single portfolio
+Edit and update existing portfolios
+Delete portfolios as needed
+Contact employers and fellow employees for networking opportunities
+Security
+User accounts are heavily protected using JWT (JSON Web Tokens), ensuring secure authentication and data integrity. This robust security feature allows users to manage their portfolios with peace of mind.
+
+Features
+User-friendly interface developed with React
+Efficient data handling with Express and MongoDB
+TypeScript for enhanced code quality and maintainability
+RESTful API for seamless interactions
+Getting Started
+To get started with MongoPortfolioAPI, check the documentation in the repository for setup instructions, API endpoints, and usage examples.
+
+Contributing
+Contributions are welcome! Feel free to fork the repository, create an issue, or submit a pull request. Together, we can enhance this project and provide a valuable tool for developers and users alike.
+
+For any inquiries or feedback, please reach out.
+
+Thank you for your interest in MongoPortfolioAPI!
+
