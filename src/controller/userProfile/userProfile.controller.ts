@@ -1,0 +1,16 @@
+import express from 'express';
+import { createProfile } from '../../service/implementators/userProfile/createProfile/createProfile.impl';
+import { validate } from '../../middleware/globalValidator/globalValidator.middle';
+import { profileRegistration, updateMyProfileAccountRegistration } from '../../util/validators';
+import { authToken } from '../../middleware/auth/auth.middle';
+import { fetchProfiles } from '../../service/implementators/userProfile/fetchProfiles/fetchProfiles.impl';
+import { fetchProfile } from '../../service/implementators/userProfile/fetchprofile/fetchProfile.impl';
+import { updateMyProfile } from '../../service/implementators/userProfile/updateProfile/updateProfile.impl';
+import { deleteProfile } from '../../service/implementators/userProfile/deleteProfile/removeMyProfileAccount.impl';
+const router = express.Router();
+router.post('/create-profile', authToken, validate(profileRegistration),  createProfile);
+router.get('/fetch-profiles', authToken, fetchProfiles);
+router.get('/fetch-profile/:id', authToken, fetchProfile);
+router.put('/update-my-profile-account/:id', authToken, validate(updateMyProfileAccountRegistration), updateMyProfile);
+router.delete('/delete-profile/:id', authToken, deleteProfile);
+export default router;

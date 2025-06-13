@@ -5,6 +5,12 @@ import helmet from 'helmet';
 import compression from 'compression';
 import cookieParser from 'cookie-parser';
 import morgan from 'morgan';
+// register routes
+import authRoute from './controller/auth/auth.controller';
+import profileRoute from './controller/userProfile/userProfile.controller';
+import contactRoute from './controller/contact/contact.controller';
+import { notFoundRoute } from './middleware/404/notFoundMiddleware';
+import { serverError } from './middleware/500/500.server-error';
 import databaseConfig from './config/databaseConfig/mongoDBConfig';
 import { rateLimit } from 'express-rate-limit'
 const app: Application = express();
@@ -33,7 +39,13 @@ if (process.env.NODE_ENV as string === 'development') {
     app.use(morgan('dev'))
 }
 // Routes
+app.use(`/api/${process.env.API_VERSION}/auth`, authRoute);
+app.use(`/api/${process.env.API_VERSION}/profile`, profileRoute);
+app.use(`/api/${process.env.API_VERSION}/contact`, contactRoute);
 
+
+app.use(notFoundRoute);
+app.use(serverError);
 async function serve() {
     try {
         await databaseConfig(),
