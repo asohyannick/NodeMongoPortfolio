@@ -8,7 +8,7 @@ const removeAnAccount = async(req: Request, res: Response): Promise<Response> =>
         if (!user) {
             return res.status(StatusCodes.NOT_FOUND).json({message: "User's account not found!"});
         }
-        return res.status(StatusCodes.OK).json({message: "User's account has been deleted successfully!"});
+        return res.status(StatusCodes.OK).json({message: "User's account has been deleted successfully!", user});
     } catch (error) {
         return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({message: "Something went wrong!", error})        
     }

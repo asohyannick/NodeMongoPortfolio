@@ -21,6 +21,7 @@ const sendTestimonialToUs = async(req: Request, res: Response): Promise<Response
         await testimonial.save();
         return res.status(StatusCodes.CREATED).json({success: true, message: "Testimonial has been created successfully!", testimonial})
     } catch (error) {
+        console.log("Error message", error);
         return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({message: "Something went wrong!"})        
     }
 };

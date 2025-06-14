@@ -2,8 +2,8 @@ import *  as Yup from 'yup';
 import { CategoryStatus, LEVELStatus } from '../service/interfac/skill/skill.interface';
 import { ProjectStatus } from '../service/interfac/project/project.inteface';
 const userRegistration = Yup.object().shape({
-    firstName: Yup.string().required("FirstName is required").trim().min(2),
-    lasttName: Yup.string().required("FirstName is required").trim().min(2),
+    firstName: Yup.string().required("firstName is required").trim().min(2),
+    lastName: Yup.string().required("lastName is required").trim().min(2),
     email: Yup.string().email("Email address must be provided ").trim().required("Email is required"),
     password: Yup.string().required("Password must be provided").min(6, "Password must be at least 6 characters long.")
 });
@@ -14,14 +14,14 @@ const userLogin = Yup.object().shape({
 });
 
 const updateMyRegistrationAccount = Yup.object().shape({
-    firstName: Yup.string().required("FirstName is required").trim().min(2),
-    lasttName: Yup.string().required("FirstName is required").trim().min(2),
+    firstName: Yup.string().required("firstName is required").trim().min(2),
+    lastName: Yup.string().required("lasttName is required").trim().min(2),
     email: Yup.string().email("Email address must be provided ").trim().required("Email is required"),
     password: Yup.string().required("Password must be provided").min(6, "Password must be at least 6 characters long.")
 });
 
 const profileRegistration = Yup.object().shape({
-    name: Yup.string().required("FirstName is required").trim().min(2),
+    name: Yup.string().required("firstName is required").trim().min(2),
     email: Yup.string().email("Email address must be provided ").trim().required("Email is required"),
     password: Yup.string().required("Password must be provided").min(6, "Password must be at least 6 characters long."),
     profilePicture: Yup.string().required("Profile picture is required").trim().nullable(),

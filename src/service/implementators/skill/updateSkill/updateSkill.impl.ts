@@ -13,7 +13,7 @@ const editAndUpdateSkill = async (req: Request, res: Response): Promise<Response
             {
                 name,
                 yearsOfExperience
-            }, { runValidators: true });
+            }, { new: true, runValidators: true });
         if (!skill) {
             return res.status(StatusCodes.NOT_FOUND).json({ message: "Skill doesn't exist!" })
         }

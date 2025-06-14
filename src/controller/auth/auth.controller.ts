@@ -14,7 +14,7 @@ const router = express.Router();
 router.post('/register', validate(userRegistration), createAnAcount);
 router.post('/login', authToken, validate(userLogin), signin);
 router.post('/logout', logout);
-router.post('/refreshAccessToken', authToken, refreshAccessToken);
+router.post('/refresh-access-token', authToken, refreshAccessToken);
 router.put('/update-account/:id', authToken, validate(updateMyRegistrationAccount), updateMyAccount);
 router.get('/fetch-accounts', authToken, fetchAccounts);
 router.get('/fetch-account/:id', authToken, fetchAccount);

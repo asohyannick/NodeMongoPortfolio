@@ -13,6 +13,6 @@ router.post('/create-project', authToken, validate(ProjectSchema), showProject);
 router.get('/fetch-projects', authToken, retreiveProjects);
 router.get('/fetch-project/:id', authToken, retreiveProject);
 router.get('/search-project', authToken, searchProject);
-router.put('/update-projcet/:id', authToken, validate(updateProjectSchema), updateProject);
+router.put('/update-project/:id', authToken, validate(updateProjectSchema), updateProject);
 router.delete('/delete-project/:id', authToken, deleteProject);
 export default router;

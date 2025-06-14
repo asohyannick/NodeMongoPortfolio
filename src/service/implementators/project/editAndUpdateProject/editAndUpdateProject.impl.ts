@@ -19,7 +19,7 @@ const updateProject = async (req: Request, res: Response): Promise<Response> => 
                 url,
                 repositoryUrl,
                 image,
-            }, { runValidators: true });
+            }, {new: true, runValidators: true });
         if (!newProject) {
             return res.status(StatusCodes.NOT_FOUND).json({ message: "Project doesn't exist!" })
         }

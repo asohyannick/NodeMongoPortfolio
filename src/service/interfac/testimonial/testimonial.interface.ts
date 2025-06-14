@@ -1,6 +1,5 @@
-import { Types, Document } from "mongoose";
+import { Document } from "mongoose";
 export interface ITestimonial extends Document {
-    userId: Types.ObjectId;
     author: string;
     message: string;
     authorPosition: string;

@@ -1,4 +1,4 @@
-import { Types, Document } from "mongoose";
+import { Document } from "mongoose";
 export enum CategoryStatus {
     JUNIOR = "JUNIOR FULL STACK NODE.JS DEVELOPER",
     MID_LEVEL = "MID-LEVEL FULL STACK NODE.JS DEVELOPER",
@@ -12,7 +12,6 @@ export enum LEVELStatus {
 }
 
 export interface ISkill extends Document {
-    userId: Types.ObjectId;
     name: string[];
     level: LEVELStatus;
     yearsOfExperience: number;

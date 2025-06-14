@@ -30,6 +30,7 @@ const createProfile = async(req: Request, res: Response): Promise<Response> => {
             newProfile
         });
     } catch (error) {
+        console.log(error);
         return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({message: "Something went wrong!"})        
     }
 }

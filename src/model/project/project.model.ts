@@ -1,11 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 import { IProject, ProjectStatus } from '../../service/interfac/project/project.inteface';
 const projectSchema: Schema = new Schema<IProject>({
-userId:{
-    type: Schema.Types.ObjectId,
-    ref: 'UserProfile',
-    required: true,
-},
 title:{
     type: String,
     trim: true,

@@ -11,7 +11,7 @@ const retrieveTestimonial = async(req: Request, res: Response): Promise<Response
         }
         return res.status(StatusCodes.OK).json({
             success: true,
-            message: "Testimonial has been created successfully!", 
+            message: "Testimonial has been fetched successfully!", 
             testimonial
         });
     } catch (error) {

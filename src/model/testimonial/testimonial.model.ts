@@ -1,11 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 import { ITestimonial } from '../../service/interfac/testimonial/testimonial.interface';
 const testimonialSchema: Schema = new Schema<ITestimonial>({
-userId:{
-    type: Schema.Types.ObjectId,
-    ref: "UserProfile",
-    required: true,
-},
 author:{
     type: String,
     trim: true,

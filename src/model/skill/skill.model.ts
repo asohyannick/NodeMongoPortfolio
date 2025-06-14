@@ -1,11 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 import { CategoryStatus,  ISkill, LEVELStatus } from '../../service/interfac/skill/skill.interface';
 const skillSchema: Schema = new Schema<ISkill>({
-userId:{
-    type: Schema.Types.ObjectId,
-    ref: "UserProfile",
-    required: true,
-},
 name:{
     type: [String],
     trim: true,

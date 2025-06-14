@@ -18,7 +18,7 @@ const updateTestimonial = async (req: Request, res: Response): Promise<Response>
                 authorPosition,
                 authorCompany,
                 authorCountry
-            }, { runValidators: true });
+            }, {new: true, runValidators: true });
         if (!testimonial) {
             return res.status(StatusCodes.NOT_FOUND).json({ message: "Testimonial doesn't exist!" });
         }

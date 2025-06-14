@@ -23,7 +23,7 @@ const updateMyProfile = async(req: Request, res: Response): Promise<Response> =>
                 website,
                 socialLinks
            }, 
-            {  runValidators: true }
+            { new: true,  runValidators: true }
         );
         if (!profile) {
             return res.status(StatusCodes.NOT_FOUND).json({message: "User's profile account not found!"})

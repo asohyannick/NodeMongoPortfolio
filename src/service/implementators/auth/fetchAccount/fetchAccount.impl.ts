@@ -8,7 +8,7 @@ const fetchAccount = async(req: Request, res: Response): Promise<Response> => {
         if (!account) {
             return res.status(StatusCodes.NOT_FOUND).json({message: "User's account not found!"});
         }
-        return res.status(StatusCodes.OK).json({message: "User's account has been fetched successfully!"});
+        return res.status(StatusCodes.OK).json({message: "User's account has been fetched successfully!", account});
     } catch (error) {
         return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({message: "Something went wrong!"})        
     }

@@ -5,7 +5,8 @@ const updateMessage = async (req: Request, res: Response): Promise<Response> => 
    try {
       const { id } = req.params;
       const { name, email, title, message } = req.body;
-      const contact = await ContactModel.findByIdAndUpdate(id, { name, email, title, message }, { runValidators: true });
+      const contact = await ContactModel.findByIdAndUpdate(id, { name, email, title, message },
+         { new: true, runValidators: true });
       if (!contact) {
          return res.status(StatusCodes.NOT_FOUND).json({ message: "Message doesn't exist!" })
       }
