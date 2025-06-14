@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { StatusCodes } from "http-status-codes";
 import UserProfile from "../../../../model/userProfile/userProfile.model";
-const fetchProfiles = async(req: Request, res: Response): Promise<Response> => {
+const fetchProfiles = async(_req: Request, res: Response): Promise<Response> => {
     try {
         const profiles = await UserProfile.find();
         return res.status(StatusCodes.OK).json({message: "User's profiles have been fetched successfully!", profiles});

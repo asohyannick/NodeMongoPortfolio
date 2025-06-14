@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { StatusCodes } from "http-status-codes";
 import Testimonial from '../../../../model/testimonial/testimonial.model';
 
-const retrieveTestimonials = async(req: Request, res: Response): Promise<Response> => {
+const retrieveTestimonials = async(_req: Request, res: Response): Promise<Response> => {
     try {
         const testimonials = await Testimonial.find(); 
         return res.status(StatusCodes.OK).json({success: true, message: "Testimonials have been fetched successfully!", testimonials})
