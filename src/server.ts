@@ -9,6 +9,10 @@ import morgan from 'morgan';
 import authRoute from './controller/auth/auth.controller';
 import profileRoute from './controller/userProfile/userProfile.controller';
 import contactRoute from './controller/contact/contact.controller';
+import aboutAuthorRoute from './controller/aboutMe/aboutMe.controller';
+import testimonialRoute from './controller/testimonial/testimonial.controller';
+import skillRoute from './controller/skill/skill.controller';
+import projectRoute from './controller/project/project.controller';
 import { notFoundRoute } from './middleware/404/notFoundMiddleware';
 import { serverError } from './middleware/500/500.server-error';
 import databaseConfig from './config/databaseConfig/mongoDBConfig';
@@ -42,6 +46,10 @@ if (process.env.NODE_ENV as string === 'development') {
 app.use(`/api/${process.env.API_VERSION}/auth`, authRoute);
 app.use(`/api/${process.env.API_VERSION}/profile`, profileRoute);
 app.use(`/api/${process.env.API_VERSION}/contact`, contactRoute);
+app.use(`/api/${process.env.API_VERSION}/about-me`, aboutAuthorRoute);
+app.use(`/api/${process.env.API_VERSION}/testimonial`, testimonialRoute);
+app.use(`/api/${process.env.API_VERSION}/skill`, skillRoute);
+app.use(`/api/${process.env.API_VERSION}/project`, projectRoute);
 
 
 app.use(notFoundRoute);

@@ -15,7 +15,6 @@ const updateMyProfile = async(req: Request, res: Response): Promise<Response> =>
         } = req.body;
         const profile = await UserProfile.findByIdAndUpdate(id, 
             {      
-                name, 
                 email,
                 password,
                 profilePicture,

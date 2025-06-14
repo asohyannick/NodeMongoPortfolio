@@ -1,5 +1,5 @@
 import mongoose, { Schema } from "mongoose";
-import { ISkill } from '../../service/interfac/skill/skill.interface';
+import { CategoryStatus,  ISkill, LEVELStatus } from '../../service/interfac/skill/skill.interface';
 const skillSchema: Schema = new Schema<ISkill>({
 userId:{
     type: Schema.Types.ObjectId,
@@ -7,11 +7,13 @@ userId:{
     required: true,
 },
 name:{
-    type: String,
+    type: [String],
     trim: true,
 },
 level:{
     type: String,
+    enum: Object.values(LEVELStatus),
+    default: LEVELStatus.NODEJS,
     trim: true,
 },
 yearsOfExperience:{
@@ -19,7 +21,8 @@ yearsOfExperience:{
 },
 category:{
     type: String,
-    trim: true,
+    enum:Object.values(CategoryStatus),
+    default: CategoryStatus.MID_LEVEL,
 },
 }, {timestamps: true});
 const SkillModel = mongoose.model<ISkill>('SkillModel', skillSchema);

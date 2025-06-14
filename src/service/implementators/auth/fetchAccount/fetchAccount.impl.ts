@@ -6,7 +6,7 @@ const fetchAccount = async(req: Request, res: Response): Promise<Response> => {
         const { id } = req.params;
         const account = await AuthModel.findById(id);
         if (!account) {
-            return res.status(StatusCodes.NOT_FOUND).json({message: "User's account has been fetched successfully!"});
+            return res.status(StatusCodes.NOT_FOUND).json({message: "User's account not found!"});
         }
         return res.status(StatusCodes.OK).json({message: "User's account has been fetched successfully!"});
     } catch (error) {

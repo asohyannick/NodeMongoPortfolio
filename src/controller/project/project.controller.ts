@@ -1,0 +1,18 @@
+import express from 'express';
+import { authToken } from '../../middleware/auth/auth.middle';
+import { showProject } from '../../service/implementators/project/showProject/showProject.impl';
+import { validate } from '../../middleware/globalValidator/globalValidator.middle';
+import { ProjectSchema, updateProjectSchema } from '../../util/validators';
+import { retreiveProjects } from '../../service/implementators/project/fetchProjects/fetchProjects.impl';
+import { retreiveProject } from '../../service/implementators/project/fetchProject/fetchProject.impl';
+import { updateProject } from '../../service/implementators/project/editAndUpdateProject/editAndUpdateProject.impl';
+import { deleteProject } from '../../service/implementators/project/deleteProject/removeProject.impl';
+import { searchProject } from '../../service/implementators/project/searchProject/searchProject.impl';
+const router = express.Router();
+router.post('/create-project', authToken, validate(ProjectSchema), showProject);
+router.get('/fetch-projects', authToken, retreiveProjects);
+router.get('/fetch-project/:id', authToken, retreiveProject);
+router.get('/search-project', authToken, searchProject);
+router.put('/update-projcet/:id', authToken, validate(updateProjectSchema), updateProject);
+router.delete('/delete-project/:id', authToken, deleteProject);
+export default router;

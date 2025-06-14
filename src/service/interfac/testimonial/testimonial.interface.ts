@@ -5,4 +5,5 @@ export interface ITestimonial extends Document {
     message: string;
     authorPosition: string;
     authorCompany: string;
+    authorCountry: string;
 }

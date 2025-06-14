@@ -33,7 +33,7 @@ image:{
 status:{
     type: String,
     enum: Object.values(ProjectStatus),
-    default: ProjectStatus.INPROGRESS,
+    default: ProjectStatus.IN_PROGRESS,
 },
 startDate:{
     type: Date,
