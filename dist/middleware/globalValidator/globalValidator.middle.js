@@ -11,4 +11,3 @@ const validate = (schema) => {
     };
 };
 export { validate };
-//# sourceMappingURL=globalValidator.middle.js.map

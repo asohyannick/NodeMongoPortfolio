@@ -14,4 +14,3 @@ router.get('/fetch-profile/:id', authToken, fetchProfile);
 router.put('/update-my-profile-account/:id', authToken, validate(updateMyProfileAccountRegistration), updateMyProfile);
 router.delete('/delete-profile/:id', authToken, deleteProfile);
 export default router;
-//# sourceMappingURL=userProfile.controller.js.map

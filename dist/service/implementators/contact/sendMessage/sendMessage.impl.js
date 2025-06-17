@@ -21,4 +21,3 @@ const createMessage = async (req, res) => {
     }
 };
 export { createMessage };
-//# sourceMappingURL=sendMessage.impl.js.map

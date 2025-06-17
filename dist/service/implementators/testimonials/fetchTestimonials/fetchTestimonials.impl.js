@@ -10,4 +10,3 @@ const retrieveTestimonials = async (_req, res) => {
     }
 };
 export { retrieveTestimonials };
-//# sourceMappingURL=fetchTestimonials.impl.js.map

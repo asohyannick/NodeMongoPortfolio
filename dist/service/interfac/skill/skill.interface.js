@@ -11,4 +11,3 @@ export var LEVELStatus;
     LEVELStatus["JAVA"] = "FULL STACK SPRING BOOT DEVELOPER";
     LEVELStatus["GOLANG"] = "FULL STACK GOLANG DEVELOPER";
 })(LEVELStatus || (LEVELStatus = {}));
-//# sourceMappingURL=skill.interface.js.map

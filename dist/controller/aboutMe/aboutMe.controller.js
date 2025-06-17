@@ -14,4 +14,3 @@ router.get('/fetch-message/:id', authToken, fetchMessage);
 router.put('/update-message/:id', authToken, validate(updateMessageValidation), updateMessage);
 router.delete('/delete-message/:id', authToken, deleteMessage);
 export default router;
-//# sourceMappingURL=aboutMe.controller.js.map

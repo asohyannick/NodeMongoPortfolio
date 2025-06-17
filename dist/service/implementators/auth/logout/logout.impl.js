@@ -16,4 +16,3 @@ const logout = async (_req, res) => {
     }
 };
 export { logout };
-//# sourceMappingURL=logout.impl.js.map

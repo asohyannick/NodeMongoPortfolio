@@ -23,4 +23,3 @@ const showProject = async (req, res) => {
     }
 };
 export { showProject };
-//# sourceMappingURL=showProject.impl.js.map

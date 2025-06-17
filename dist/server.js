@@ -70,4 +70,3 @@ async function serve() {
     }
 }
 serve();
-//# sourceMappingURL=server.js.map

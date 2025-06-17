@@ -16,4 +16,3 @@ router.get('/search-project', authToken, searchProject);
 router.put('/update-project/:id', authToken, validate(updateProjectSchema), updateProject);
 router.delete('/delete-project/:id', authToken, deleteProject);
 export default router;
-//# sourceMappingURL=project.controller.js.map

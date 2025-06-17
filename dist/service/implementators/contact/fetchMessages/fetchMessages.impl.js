@@ -10,4 +10,3 @@ const fetchMessages = async (_req, res) => {
     }
 };
 export { fetchMessages };
-//# sourceMappingURL=fetchMessages.impl.js.map

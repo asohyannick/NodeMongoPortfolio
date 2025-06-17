@@ -51,7 +51,6 @@ app.use(`/api/${process.env.API_VERSION}/testimonial`, testimonialRoute);
 app.use(`/api/${process.env.API_VERSION}/skill`, skillRoute);
 app.use(`/api/${process.env.API_VERSION}/project`, projectRoute);
 
-
 app.use(notFoundRoute);
 app.use(serverError);
 async function serve() {

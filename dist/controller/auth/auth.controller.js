@@ -20,4 +20,3 @@ router.get('/fetch-accounts', authToken, fetchAccounts);
 router.get('/fetch-account/:id', authToken, fetchAccount);
 router.delete('/delete-account/:id', authToken, removeAnAccount);
 export default router;
-//# sourceMappingURL=auth.controller.js.map

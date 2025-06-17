@@ -14,4 +14,3 @@ const fetchProfile = async (req, res) => {
     }
 };
 export { fetchProfile };
-//# sourceMappingURL=fetchProfile.impl.js.map

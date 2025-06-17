@@ -19,4 +19,3 @@ const contactSchema = new Schema({
 }, { timestamps: true });
 const ContactModel = mongoose.model('Contact', contactSchema);
 export default ContactModel;
-//# sourceMappingURL=contact.model.js.map

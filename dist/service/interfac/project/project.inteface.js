@@ -4,4 +4,3 @@ export var ProjectStatus;
     ProjectStatus["IN_PROGRESS"] = "IN PROGRESS";
     ProjectStatus["COMPLETED"] = "COMPLETED";
 })(ProjectStatus || (ProjectStatus = {}));
-//# sourceMappingURL=project.inteface.js.map

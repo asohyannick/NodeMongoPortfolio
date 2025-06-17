@@ -23,4 +23,3 @@ const updateMessage = async (req, res) => {
     }
 };
 export { updateMessage };
-//# sourceMappingURL=updateMessage.impl.js.map

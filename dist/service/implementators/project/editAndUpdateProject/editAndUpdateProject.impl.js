@@ -22,4 +22,3 @@ const updateProject = async (req, res) => {
     }
 };
 export { updateProject };
-//# sourceMappingURL=editAndUpdateProject.impl.js.map

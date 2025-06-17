@@ -20,4 +20,3 @@ const createDetail = async (req, res) => {
     }
 };
 export { createDetail };
-//# sourceMappingURL=createDetail.impl.js.map

@@ -14,4 +14,3 @@ const deleteMessage = async (req, res) => {
     }
 };
 export { deleteMessage };
-//# sourceMappingURL=deleteMessage.impl.js.map

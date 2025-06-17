@@ -7,4 +7,3 @@ const notFoundRoute = (_req, res) => {
     });
 };
 export { notFoundRoute };
-//# sourceMappingURL=notFoundMiddleware.js.map

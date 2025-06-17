@@ -19,4 +19,3 @@ const sendTestimonialToUs = async (req, res) => {
     }
 };
 export { sendTestimonialToUs };
-//# sourceMappingURL=sendTestimonial.impl.js.map

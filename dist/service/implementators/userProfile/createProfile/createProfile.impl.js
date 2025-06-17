@@ -26,4 +26,3 @@ const createProfile = async (req, res) => {
     }
 };
 export { createProfile };
-//# sourceMappingURL=createProfile.impl.js.map

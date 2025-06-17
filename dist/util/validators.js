@@ -131,4 +131,3 @@ const updateProjectSchema = Yup.object().shape({
     image: Yup.string().url().required("Image URL must be provided"),
 });
 export { userRegistration, userLogin, updateMyRegistrationAccount, profileRegistration, updateMyProfileAccountRegistration, sendMessageValidation, editAndUpdateMessageValidation, createDetailValidation, updateMessageValidation, sendTestimonialMessageValidationToUs, updateTestimonialValidation, validateSkillSet, validateUpdatedSkillSet, ProjectSchema, updateProjectSchema };
-//# sourceMappingURL=validators.js.map

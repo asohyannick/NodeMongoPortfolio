@@ -14,4 +14,3 @@ router.get('/fetch-skill/:id', authToken, retrieveSkill);
 router.put('/update-skill/:id', authToken, validate(validateUpdatedSkillSet), editAndUpdateSkill);
 router.delete('/delete-skill/:id', authToken, eradicateSkill);
 export default router;
-//# sourceMappingURL=skill.controller.js.map

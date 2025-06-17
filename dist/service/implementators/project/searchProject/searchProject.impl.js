@@ -48,4 +48,3 @@ const searchProject = async (req, res) => {
     }
 };
 export { searchProject };
-//# sourceMappingURL=searchProject.impl.js.map

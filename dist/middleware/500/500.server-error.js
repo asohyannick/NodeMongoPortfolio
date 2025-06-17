@@ -7,4 +7,3 @@ const serverError = (_err, _req, res) => {
     });
 };
 export { serverError };
-//# sourceMappingURL=500.server-error.js.map

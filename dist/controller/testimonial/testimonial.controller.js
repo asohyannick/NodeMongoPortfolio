@@ -14,4 +14,3 @@ router.get('/fetch-testimonial/:id', authToken, retrieveTestimonial);
 router.put('/update-testimonial/:id', authToken, validate(updateTestimonialValidation), updateTestimonial);
 router.delete('/delete-testimonial/:id', authToken, removeTestimonial);
 export default router;
-//# sourceMappingURL=testimonial.controller.js.map

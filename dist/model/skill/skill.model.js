@@ -22,4 +22,3 @@ const skillSchema = new Schema({
 }, { timestamps: true });
 const SkillModel = mongoose.model('SkillModel', skillSchema);
 export default SkillModel;
-//# sourceMappingURL=skill.model.js.map

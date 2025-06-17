@@ -15,4 +15,3 @@ async function databaseConfig() {
     }
 }
 export default databaseConfig;
-//# sourceMappingURL=mongoDBConfig.js.map

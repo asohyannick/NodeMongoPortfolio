@@ -14,4 +14,3 @@ const fetchAccount = async (req, res) => {
     }
 };
 export { fetchAccount };
-//# sourceMappingURL=fetchAccount.impl.js.map

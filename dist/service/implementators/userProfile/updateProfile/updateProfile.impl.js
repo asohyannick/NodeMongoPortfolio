@@ -23,4 +23,3 @@ const updateMyProfile = async (req, res) => {
     }
 };
 export { updateMyProfile };
-//# sourceMappingURL=updateProfile.impl.js.map

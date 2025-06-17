@@ -66,4 +66,3 @@ userProfileSchema.pre('save', async function (next) {
 });
 const UserProfile = mongoose.model('UserProfile', userProfileSchema);
 export default UserProfile;
-//# sourceMappingURL=userProfile.model.js.map

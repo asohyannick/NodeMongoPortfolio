@@ -14,4 +14,3 @@ const eradicateSkill = async (req, res) => {
     }
 };
 export { eradicateSkill };
-//# sourceMappingURL=removeSkill.impl.js.map

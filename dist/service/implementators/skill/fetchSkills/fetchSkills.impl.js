@@ -10,4 +10,3 @@ const retrieveSkills = async (_req, res) => {
     }
 };
 export { retrieveSkills };
-//# sourceMappingURL=fetchSkills.impl.js.map

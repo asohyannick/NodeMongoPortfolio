@@ -14,4 +14,3 @@ const deleteProfile = async (req, res) => {
     }
 };
 export { deleteProfile };
-//# sourceMappingURL=removeMyProfileAccount.impl.js.map

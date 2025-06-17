@@ -18,4 +18,3 @@ const editAndUpdateSkill = async (req, res) => {
     }
 };
 export { editAndUpdateSkill };
-//# sourceMappingURL=updateSkill.impl.js.map

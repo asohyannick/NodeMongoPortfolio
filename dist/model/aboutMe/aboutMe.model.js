@@ -30,4 +30,3 @@ const aboutMeSchema = new Schema({
 }, { timestamps: true });
 const AboutMe = mongoose.model('AboutMe', aboutMeSchema);
 export default AboutMe;
-//# sourceMappingURL=aboutMe.model.js.map

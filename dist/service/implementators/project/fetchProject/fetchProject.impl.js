@@ -14,4 +14,3 @@ const retreiveProject = async (req, res) => {
     }
 };
 export { retreiveProject };
-//# sourceMappingURL=fetchProject.impl.js.map

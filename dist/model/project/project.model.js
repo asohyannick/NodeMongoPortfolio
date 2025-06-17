@@ -41,4 +41,3 @@ const projectSchema = new Schema({
 }, { timestamps: true });
 const ProjectModel = mongoose.model('ProjectModel', projectSchema);
 export default ProjectModel;
-//# sourceMappingURL=project.model.js.map

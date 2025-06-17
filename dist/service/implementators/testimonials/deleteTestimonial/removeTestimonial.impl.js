@@ -18,4 +18,3 @@ const removeTestimonial = async (req, res) => {
     }
 };
 export { removeTestimonial };
-//# sourceMappingURL=removeTestimonial.impl.js.map

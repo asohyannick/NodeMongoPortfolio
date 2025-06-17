@@ -36,4 +36,3 @@ authSchema.pre('save', async function (next) {
 });
 const AuthModel = mongoose.model('AuthModel', authSchema);
 export default AuthModel;
-//# sourceMappingURL=auth.model.js.map

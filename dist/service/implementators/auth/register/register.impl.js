@@ -47,4 +47,3 @@ const createAnAcount = async (req, res) => {
     }
 };
 export { createAnAcount };
-//# sourceMappingURL=register.impl.js.map

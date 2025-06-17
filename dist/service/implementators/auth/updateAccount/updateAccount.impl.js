@@ -18,4 +18,3 @@ const updateMyAccount = async (req, res) => {
     }
 };
 export { updateMyAccount };
-//# sourceMappingURL=updateAccount.impl.js.map

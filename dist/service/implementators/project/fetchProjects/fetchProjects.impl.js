@@ -10,4 +10,3 @@ const retreiveProjects = async (_req, res) => {
     }
 };
 export { retreiveProjects };
-//# sourceMappingURL=fetchProjects.impl.js.map

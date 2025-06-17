@@ -14,4 +14,3 @@ const deleteProject = async (req, res) => {
     }
 };
 export { deleteProject };
-//# sourceMappingURL=removeProject.impl.js.map

@@ -25,4 +25,3 @@ const updateTestimonial = async (req, res) => {
     }
 };
 export { updateTestimonial };
-//# sourceMappingURL=updateTestimonial.impl.js.map

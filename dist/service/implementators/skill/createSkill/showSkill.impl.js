@@ -18,4 +18,3 @@ const createSkill = async (req, res) => {
     }
 };
 export { createSkill };
-//# sourceMappingURL=showSkill.impl.js.map
